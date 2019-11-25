@@ -1,24 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>Employee Data</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<form action="insert.php" method="post">
-	Name:<br>
-	<input type="text" name="name" placeholder="Name" required><br>
-	E-mail:<br>
-	<input type="email" name="email" placeholder="E-mail"><br>
-	Position:<br>
-	<input type="text" name="position" placeholder="Position" required><br>
-	Phone Number:<br>
-	<input type="tel" name="phone" placeholder="Phone Number"><br>
-	Salary:<br>
-	<input type="number" name="salary" placeholder="Salary" min="0"><br>
-	Date Hired:<br>
-	<input type="date" name="hire_date"><br><br>
-	<input type="submit" value="Submit">
-	</form>
+<div class="container">
+	<div class="row">
+		<div class="sticky-top flex-grow-1">
+			<div class="nav nav-stacked">
+				<a href="insert_form.html" class="nav-link">New Entry</a>
+				<a href="search.php" class="nav-link">View Entries</a>
+			</div>
+		</div>
+		
+		<div class="content col-md-12">
+			<h1> Insert Employee Data </h1>
+			<div class="row">
+				<div class="col-md-12">
+				<form action="insert.php" method="post">
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="form_name">Name:</label>
+								<input class="form-control" type="text" id="form_name" name="name" placeholder="Name" required><br>
+							</div>
+							<div class="col-md-6">
+								<label for="form_email">E-mail:</label>
+								<input class="form-control" type="email" id="form_email" name="email" placeholder="E-mail"><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								Position:<br>
+								<input class="form-control" type="text" name="position" placeholder="Position" required><br>
+							</div>
+							<div class="col-md-6">
+								Phone Number:<br>
+								<input class="form-control" type="tel" name="phone" placeholder="Phone Number"><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">					
+								Salary:<br>
+								<input class="form-control" type="number" name="salary" placeholder="Salary" min="0"><br>
+							</div>
+							<div class="col-md-6">
+								Date Hired:<br>
+								<input class="form-control" type="date" name="hire_date"><br><br>
+							</div>
+						</div>
+						<input type="submit" value="Submit" class="btn btn-primary">
+					</div>
+				</form>	
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+h1 {
+	text-align: center;
+	padding: 30px 0 0 0;
+}
+
+.nav {
+	padding: 30px 30px;
+	background-color: #005ec9;
+}
+
+.nav-stacked a{
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.nav-stacked a:hover {
+	color: #80bbff;
+	text-decoration: none;
+}
+
+.section {
+	padding: 120px 120px;
+	position: relative;
+}
+
+.form-group {
+	padding: 50px 50px;
+}
+
+p{
+	padding: 30px 0;
+	font-size: 16px;
+}
+
+.btn {
+	margin: 5px 5px;
+}
